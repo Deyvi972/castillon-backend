@@ -35,7 +35,7 @@ public class UsuarioController {
     // ─────────────────────────────────────────
     // EMPLEADOS
     // ─────────────────────────────────────────
-    @GetMapping("/api/empleados")
+    @GetMapping("/api/empleados-dropdown")
     public ResponseEntity<?> getEmpleados() {
         try {
             String sql = """
