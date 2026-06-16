@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: castillon-backend
+    env: java
+    buildCommand: mvn clean package -DskipTests
+    startCommand: java -jar target/castillonv2.jar
+    envVars:
+      - key: DB_URL
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASS
+        sync: false
